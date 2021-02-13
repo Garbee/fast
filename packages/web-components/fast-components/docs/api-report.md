@@ -34,6 +34,8 @@ import { MenuItem } from '@microsoft/fast-foundation';
 import { NumberField } from '@microsoft/fast-foundation';
 import { PersonType } from '@microsoft/mgt';
 import { Picker } from '@microsoft/fast-foundation';
+import { PickerInput } from '@microsoft/fast-foundation';
+import { PickerList } from '@microsoft/fast-foundation';
 import { PickerMenu } from '@microsoft/fast-foundation';
 import { Radio } from '@microsoft/fast-foundation';
 import { RadioGroup } from '@microsoft/fast-foundation';
@@ -603,6 +605,14 @@ export class FASTPeoplePicker extends PeoplePicker {
 }
 
 // @public (undocumented)
+export class FASTPeoplePickerInput extends PickerInput {
+}
+
+// @public (undocumented)
+export class FASTPeoplePickerList extends PickerList {
+}
+
+// @public (undocumented)
 export class FASTPeoplePickerMenu extends PickerMenu {
 }
 
@@ -1118,6 +1128,12 @@ export enum PaletteType {
 
 // @public
 export const parseColorString: (color: string) => ColorRGBA64;
+
+// @public
+export const PeoplePickerInputStyles: import("@microsoft/fast-element").ElementStyles;
+
+// @public
+export const PeoplePickerListStyles: import("@microsoft/fast-element").ElementStyles;
 
 // @public
 export const PeoplePickerMenuStyles: import("@microsoft/fast-element").ElementStyles;
