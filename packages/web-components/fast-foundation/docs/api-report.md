@@ -1366,8 +1366,6 @@ export class Picker extends FASTElement {
     selectedOptions: string[];
     // (undocumented)
     selection: string;
-    // @internal
-    slottedMenuElements: HTMLElement[];
     }
 
 // @public
@@ -1392,6 +1390,8 @@ export class PickerMenu extends FASTElement {
     menuElementsChanged(): void;
     // @internal
     optionElements: HTMLElement[];
+    // (undocumented)
+    showOptions: boolean;
     }
 
 // @public
