@@ -1306,6 +1306,7 @@ export type ParentLocator = (owner: any) => Container | null;
 
 // @public
 export class Picker extends FASTElement {
+    autoUpdateInterval: number;
     // @internal (undocumented)
     connectedCallback(): void;
     // (undocumented)
@@ -1316,6 +1317,7 @@ export class Picker extends FASTElement {
     defaultSelection: string;
     // (undocumented)
     disconnectedCallback(): void;
+    fixedPlacement: boolean;
     // (undocumented)
     handleFocusOut: (e: FocusEvent) => void;
     // (undocumented)
@@ -1349,6 +1351,8 @@ export class Picker extends FASTElement {
     // @internal (undocumented)
     menuOpen: boolean;
     // (undocumented)
+    menuPosition: PickerMenuPosition;
+    // (undocumented)
     options: string;
     // (undocumented)
     optionsList: string[];
@@ -1366,6 +1370,8 @@ export class Picker extends FASTElement {
     selectedOptions: string[];
     // (undocumented)
     selection: string;
+    // (undocumented)
+    updatePosition: () => void;
     }
 
 // @public
@@ -1393,6 +1399,16 @@ export class PickerMenu extends FASTElement {
     // (undocumented)
     showOptions: boolean;
     }
+
+// @public (undocumented)
+export enum PickerMenuPosition {
+    // (undocumented)
+    bottom = "bottom",
+    // (undocumented)
+    dynamic = "dynamic",
+    // (undocumented)
+    top = "top"
+}
 
 // @public
 export const ProgressRingTemplate: import("@microsoft/fast-element").ViewTemplate<BaseProgress, any>;
