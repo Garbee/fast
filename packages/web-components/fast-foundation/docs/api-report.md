@@ -1440,6 +1440,8 @@ export class Picker extends FASTElement {
     // (undocumented)
     handleRegionLoaded: (e: Event) => void;
     // (undocumented)
+    protected handleSelectionChange(): void;
+    // (undocumented)
     handleTextInput: (e: InputEvent) => void;
     // @internal
     inputElement: HTMLInputElement;
@@ -1473,7 +1475,7 @@ export class Picker extends FASTElement {
     selectedList: HTMLElement;
     // @internal (undocumented)
     selectedlisttag: string;
-    // (undocumented)
+    // @internal (undocumented)
     selectedOptions: string[];
     // (undocumented)
     selection: string;
